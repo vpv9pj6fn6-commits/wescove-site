@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wescove — New-business leads, every morning</title>
+<meta name="description" content="New-business leads, every morning. Every company registered in your state, delivered each morning, filtered to your industry and county. One new client pays for the year. Starter $199, Pro $499." />
+<meta property="og:title" content="Wescove — New-business leads, every morning" />
+<meta property="og:description" content="The freshest local lead list, in your inbox every morning. One closed client pays for a year." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://wescove.com/" />
+<meta property="og:image" content="https://wescove.com/wescove-logo.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Wescove — New-business leads, every morning" />
+<meta name="twitter:description" content="Reach Florida's newest businesses before anyone else. Fresh leads, filtered to your county and industry, every morning." />
+<meta name="twitter:image" content="https://wescove.com/wescove-logo.png" />
+<link rel="canonical" href="https://wescove.com/" />
+<link rel="icon" type="image/png" href="/wescove-icon.png" />
+<style>
+  :root{
+    --ink:#0d1b2a; --muted:#5a6b7e; --line:#e6ebf2; --bg:#ffffff;
+    --accent:#0a7d57; --accent-dark:#075b3f; --soft:#f1f8f4; --gold:#c8a34a;
+    --shadow:0 18px 50px rgba(13,27,42,.10);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  a{color:inherit}
+  /* nav */
+  header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(10px);z-index:10}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .brand{font-weight:800;font-size:21px;letter-spacing:-.02em}
+  .brand span{color:var(--accent)}
+  .nav .links{display:flex;gap:26px;align-items:center;font-size:15px;color:var(--muted)}
+  .nav .links a{text-decoration:none}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:12px 22px;border-radius:10px;font-weight:700;font-size:15px;border:none;cursor:pointer;transition:.15s}
+  .btn:hover{background:var(--accent-dark);transform:translateY(-1px)}
+  .btn.ghost{background:#fff;color:var(--accent-dark);border:1.5px solid var(--line)}
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:72px 0 56px}
+  .pill{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--accent-dark);font-weight:600;font-size:13px;padding:7px 14px;border-radius:999px;margin-bottom:22px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(10,125,87,.15)}
+  h1{font-size:50px;line-height:1.04;letter-spacing:-.035em;margin:0 0 20px}
+  h1 em{font-style:normal;color:var(--accent);position:relative}
+  .sub{font-size:20px;color:var(--muted);margin:0 0 28px}
+  .cta-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .micro{font-size:13px;color:var(--muted);margin-top:14px}
+  .micro b{color:var(--ink)}
+  /* product mock */
+  .mock{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+  .mock .bar{display:flex;align-items:center;gap:6px;padding:11px 14px;border-bottom:1px solid var(--line);background:#fbfdfc}
+  .mock .bar i{width:11px;height:11px;border-radius:50%;background:#e2e8f0;display:inline-block}
+  .mock .bar .ttl{margin-left:10px;font-size:13px;color:var(--muted);font-weight:600}
+  table.sheet{width:100%;border-collapse:collapse;font-size:12.5px}
+  table.sheet th,table.sheet td{text-align:left;padding:9px 12px;border-bottom:1px solid #eef2f7;white-space:nowrap}
+  table.sheet th{background:#f6f9fc;color:var(--accent-dark);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+  table.sheet td.badge span{background:var(--soft);color:var(--accent-dark);padding:2px 8px;border-radius:6px;font-weight:600;font-size:11px}
+  .mock .foot{padding:9px 14px;font-size:12px;color:var(--muted);background:#fbfdfc;border-top:1px solid var(--line)}
+  /* logos / trust strip */
+  .trust{padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fafcfb}
+  .trust .wrap{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;color:var(--muted);font-size:14px;font-weight:600}
+  .trust b{color:var(--accent-dark)}
+  /* sections */
+  section{padding:64px 0}
+  h2{font-size:33px;letter-spacing:-.025em;text-align:center;margin:0 0 10px}
+  .lead{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 40px;font-size:18px}
+  /* differentiation */
+  .compare{max-width:840px;margin:0 auto;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .compare .row{display:grid;grid-template-columns:1.3fr 1fr 1fr}
+  .compare .row>div{padding:16px 18px;border-bottom:1px solid var(--line)}
+  .compare .head>div{font-weight:700;font-size:14px;background:#fafcfb}
+  .compare .head .us{background:var(--soft);color:var(--accent-dark)}
+  .compare .feat{color:var(--muted);font-size:15px}
+  .compare .us{font-weight:600}
+  .compare .us:before{content:"✓ ";color:var(--accent);font-weight:800}
+  .compare .them{color:var(--muted);font-size:14px}
+  .compare .them:before{content:"✕ ";color:#c2553f;font-weight:800}
+  /* money / ROI */
+  .roi{background:var(--soft)}
+  .calc{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:32px}
+  .calc h3{margin:0 0 4px;font-size:20px;text-align:center}
+  .calc p.k{text-align:center;color:var(--muted);margin:0 0 24px;font-size:15px}
+  .calc .field{margin:18px 0}
+  .calc label{display:flex;justify-content:space-between;font-size:15px;font-weight:600;margin-bottom:8px}
+  .calc label b{color:var(--accent-dark)}
+  .calc input[type=range]{width:100%;accent-color:var(--accent)}
+  .calc select{width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;font-size:15px}
+  .result{margin-top:26px;background:var(--soft);border-radius:14px;padding:22px;text-align:center}
+  .result .big{font-size:42px;font-weight:800;color:var(--accent-dark);letter-spacing:-.02em;line-height:1}
+  .result .lbl{color:var(--muted);font-size:14px;margin-top:6px}
+  .result .net{font-size:15px;margin-top:10px}
+  .result .net b{color:var(--accent-dark)}
+  /* steps */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:960px;margin:0 auto}
+  .card{border:1px solid var(--line);border-radius:14px;padding:26px;background:#fff}
+  .card .n{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.08em}
+  .card h3{margin:8px 0 8px;font-size:18px}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  /* breadth band */
+  .breadth{background:var(--ink);color:#fff;text-align:center}
+  .breadth h2{color:#fff}
+  .breadth .lead{color:#b7c4d4}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:860px;margin:0 auto}
+  .stat .big{font-size:40px;font-weight:800;letter-spacing:-.02em;color:#fff}
+  .stat .lbl{color:#9fb0c2;font-size:14px}
+  /* pricing */
+  .price{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;align-items:stretch}
+  .plan{border:1px solid var(--line);border-radius:18px;padding:32px;width:350px;display:flex;flex-direction:column}
+  .plan.feature{border:2px solid var(--accent);box-shadow:var(--shadow);position:relative}
+  .plan .tagtop{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:999px;letter-spacing:.03em}
+  .plan h3{font-size:20px;margin:0 0 4px}
+  .plan .who{color:var(--muted);font-size:14px;margin:0 0 16px}
+  .plan .amt{font-size:48px;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .plan .amt small{font-size:16px;color:var(--muted);font-weight:600}
+  .plan ul{list-style:none;padding:0;margin:20px 0 26px;text-align:left;flex:1}
+  .plan li{padding:9px 0 9px 28px;position:relative;font-size:15px;color:#27384c}
+  .plan li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+  /* faq */
+  .faq{max-width:760px;margin:0 auto}
+  .qa{border-bottom:1px solid var(--line);padding:20px 0}
+  .qa h4{margin:0 0 6px;font-size:17px}
+  .qa p{margin:0;color:var(--muted);font-size:15px}
+  /* final cta */
+  .final{background:var(--soft);text-align:center}
+  footer{padding:42px 0;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+  @media(max-width:880px){
+    .hero{grid-template-columns:1fr;gap:34px;padding:48px 0}
+    h1{font-size:38px}.nav .links a:not(.btn){display:none}.nav .links{gap:0}
+    .grid3,.stats{grid-template-columns:1fr 1fr}
+    .compare .row{grid-template-columns:1fr}
+    .compare .them,.compare .head{display:none}
+  }
+  @media(max-width:560px){.stats{grid-template-columns:1fr 1fr}.plan{width:100%}}
+  /* cinematic dawn hero */
+  .hero-dark{background:radial-gradient(820px 380px at 72% -10%,rgba(200,163,74,.30),transparent 60%),linear-gradient(165deg,#0d1b2a,#0a1521 55%,#0d1b2a);position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.06)}
+  .hero-dark:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,163,74,.55),transparent)}
+  .hero-dark .hero{padding:84px 0 74px}
+  .hero-dark h1{color:#fff}
+  .hero-dark h1 em{color:var(--gold)}
+  .hero-dark .sub{color:#b7c4d4}
+  .hero-dark .pill{background:rgba(200,163,74,.14);color:#e7d9b0}
+  .hero-dark .pill .dot{background:var(--gold);box-shadow:0 0 0 4px rgba(200,163,74,.18)}
+  .hero-dark .micro{color:#8ea0b4}
+  .hero-dark .micro b{color:#fff}
+  .hero-dark .micro a{color:var(--gold)!important}
+  .hero-dark .mock{box-shadow:0 30px 70px rgba(0,0,0,.45);border-color:rgba(255,255,255,.08)}
+  @keyframes rowIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .hero-dark table.sheet tr{animation:rowIn .55s ease both}
+  .hero-dark table.sheet tr:nth-child(2){animation-delay:.12s}
+  .hero-dark table.sheet tr:nth-child(3){animation-delay:.22s}
+  .hero-dark table.sheet tr:nth-child(4){animation-delay:.32s}
+  .hero-dark table.sheet tr:nth-child(5){animation-delay:.42s}
+  .hero-dark table.sheet tr:nth-child(6){animation-delay:.52s}
+  .hero-dark table.sheet tr:nth-child(7){animation-delay:.62s}
+  @media(prefers-reduced-motion:reduce){.hero-dark table.sheet tr{animation:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Wes<span>cove</span></div>
+    <div class="links">
+      <a href="#how">How it works</a>
+      <a href="#different">Why us</a>
+      <a href="#roi">ROI</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn" href="#sample">Get a free sample</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO: cinematic dawn -->
+<section class="hero-dark">
+<div class="wrap hero">
+  <div>
+    <div class="pill"><span class="dot"></span> Updated every business day from public Florida records</div>
+    <h1>Reach Florida's <em>newest businesses</em> before anyone else</h1>
+    <p class="sub">Every company registered in Florida, delivered to your inbox each morning, filtered to your industry and county. You reach the owner while they are still choosing who to hire.</p>
+    <div class="cta-row">
+      <a class="btn" href="#sample" style="padding:15px 28px;font-size:16px">Get a free sample of your county's leads</a>
+      <a class="btn ghost" href="#pricing" style="padding:15px 28px;font-size:16px">See plans</a>
+    </div>
+    <p class="micro">Free sample, no card needed. <b>One new client pays for the whole year.</b> Cancel in one click.</p>
+    <p class="micro" style="margin-top:8px"><a href="filings.html" style="color:var(--accent-dark);font-weight:600">See this week's Florida business filings &rarr;</a> No signup. A snapshot of the kind of fresh filings you'll get every business day.</p>
+  </div>
+  <!-- product preview so they see the actual deliverable -->
+  <div class="mock" aria-hidden="true">
+    <div class="bar"><i></i><i></i><i></i><span class="ttl">your-leads-2026-06-16.csv</span><span style="margin-left:auto;background:var(--soft);color:var(--accent-dark);font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em">Filed yesterday</span></div>
+    <table class="sheet">
+      <tr><th>Business</th><th>Type</th><th>City</th><th>Industry</th></tr>
+      <tr><td>Sunshine Roofing LLC</td><td>FL LLC</td><td>Miami</td><td class="badge"><span>Construction</span></td></tr>
+      <tr><td>Gulf Coast Dental PA</td><td>Corp</td><td>Naples</td><td class="badge"><span>Healthcare</span></td></tr>
+      <tr><td>Palm City Realty LLC</td><td>FL LLC</td><td>W. Palm Bch</td><td class="badge"><span>Real Estate</span></td></tr>
+      <tr><td>Bay Area HVAC LLC</td><td>FL LLC</td><td>Tampa</td><td class="badge"><span>Construction</span></td></tr>
+      <tr><td>Orlando Tech Labs LLC</td><td>FL LLC</td><td>Orlando</td><td class="badge"><span>Technology</span></td></tr>
+      <tr><td>Coral Tax Advisors LLC</td><td>FL LLC</td><td>Coral Gables</td><td class="badge"><span>Finance</span></td></tr>
+    </table>
+    <div class="foot">+ owner name, registered agent, full address, and entity details on every row</div>
+  </div>
+</div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <span>Built for <b>insurance agents</b></span>
+    <span><b>CPAs</b> &amp; bookkeepers</span>
+    <span>business <b>bankers</b></span>
+    <span>marketing <b>agencies</b></span>
+    <span>title &amp; <b>commercial real estate</b></span>
+  </div>
+</div>
+
+<!-- FOUNDING MEMBER -->
+<section id="founding" style="background:linear-gradient(180deg,#fffaf0,#ffffff);border-top:1px solid var(--line)">
+  <div class="wrap" style="max-width:860px;text-align:center">
+    <div class="pill" style="background:#fbf3df;color:#8a6d1f"><span class="dot" style="background:var(--gold);box-shadow:0 0 0 4px rgba(200,163,74,.18)"></span>Founding Member: 5 Spots Only</div>
+    <h2 style="margin-bottom:10px">Founding Member: 5 Spots Only</h2>
+    <p class="lead" style="max-width:640px;margin:0 auto 8px">Lock in founding pricing forever — Pro at $99/mo (normally $499). Starts July 7. In exchange for a short testimonial and logo on our site.</p>
+    <p class="micro" style="color:#a05a2c;font-weight:700;margin:0 0 26px">⏳ Closes July 7 or when all 5 spots fill.</p>
+    <div class="price" style="max-width:680px;margin:0 auto">
+      <div class="plan">
+        <h3>Founding Starter</h3>
+        <p class="who">Solo agent, one focus area</p>
+        <div class="amt">$49<small>/mo</small> <span style="font-size:14px;color:var(--muted);text-decoration:line-through;font-weight:600">$199</span></div>
+        <ul>
+          <li>One county or one industry</li>
+          <li>Daily filtered list</li>
+          <li>Owner, agent, address, entity details</li>
+          <li>Clean CSV, deduped, ready to call</li>
+          <li>Email support</li>
+        </ul>
+        <a class="btn ghost" href="https://buy.stripe.com/3cI6oHfsbelI2R137kejK00" style="text-align:center">Claim Founding Starter — $49/mo</a>
+      </div>
+      <div class="plan feature" style="border-color:var(--gold)">
+        <div class="tagtop" style="background:var(--gold)">BEST VALUE</div>
+        <h3>Founding Pro</h3>
+        <p class="who">Serious agents and growing agencies</p>
+        <div class="amt">$99<small>/mo</small> <span style="font-size:14px;color:var(--muted);text-decoration:line-through;font-weight:600">$499</span></div>
+        <ul>
+          <li>Multiple counties and industries</li>
+          <li>The full statewide daily feed</li>
+          <li>Priority early-morning delivery</li>
+          <li>Owner, agent, address, entity details</li>
+          <li>Optional contact append (phone, email)</li>
+        </ul>
+        <a class="btn" href="https://buy.stripe.com/6oUbJ17ZJgtQdvFeQ2ejK03" style="text-align:center;background:var(--gold)">Claim Founding Pro — $99/mo</a>
+      </div>
+    </div>
+    <p style="max-width:580px;margin:22px auto 0;font-size:13.5px;color:var(--muted);line-height:1.5">
+      The founding rate is offered in exchange for marketing permissions. By claiming a founding spot you agree we may use your company name and logo as a founding member, and that you'll provide a short testimonial within 30 days. See the <a href="/terms.html" style="color:var(--accent-dark);font-weight:600">Founding Member terms</a>.
+    </p>
+  </div>
+</section>
+
+<!-- DIFFERENTIATION: why us, not a generic list -->
+<section id="different">
+  <div class="wrap">
+    <h2>Not a database. A daily edge.</h2>
+    <p class="lead">The big list services sell you a giant, stale haystack. We hand you today's needles, sorted for your business.</p>
+    <div class="compare">
+      <div class="row head">
+        <div>&nbsp;</div><div class="us">Wescove</div><div>Generic list services</div>
+      </div>
+      <div class="row">
+        <div class="feat">How fresh</div>
+        <div class="us">Filed yesterday, sent this morning</div>
+        <div class="them">Weeks or months old, recycled</div>
+      </div>
+      <div class="row">
+        <div class="feat">Focus</div>
+        <div class="us">Florida only, every county</div>
+        <div class="them">National haystack you dig through</div>
+      </div>
+      <div class="row">
+        <div class="feat">Filtering</div>
+        <div class="us">Your industries and counties, done for you</div>
+        <div class="them">You build queries and clean exports</div>
+      </div>
+      <div class="row">
+        <div class="feat">Effort</div>
+        <div class="us">Open inbox, start calling</div>
+        <div class="them">Log in, export, dedupe, format</div>
+      </div>
+      <div class="row">
+        <div class="feat">Speed to the owner</div>
+        <div class="us">First, before the competition knows</div>
+        <div class="them">After everyone else already called</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background:#fafcfb;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2>From state filing to your inbox</h2>
+    <p class="lead">You do nothing but open the file and reach out. We handle the rest, every business day.</p>
+    <div class="grid3">
+      <div class="card"><div class="n">01</div><h3>We pull it daily</h3><p>Every new business registered in Florida that day, straight from the public record.</p></div>
+      <div class="card"><div class="n">02</div><h3>We filter it to you</h3><p>Only your industries and counties, deduped, cleaned, and formatted into one simple spreadsheet.</p></div>
+      <div class="card"><div class="n">03</div><h3>You close</h3><p>Owner, address, and entity details on every row. Reach out before anyone else does.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- THE MONEY STORY: interactive ROI -->
+<section id="roi" class="roi">
+  <div class="wrap">
+    <h2>Do the math on a nominal investment</h2>
+    <p class="lead">This is not a cost. It is the cheapest client-acquisition channel you have. Move the sliders.</p>
+    <div class="calc">
+      <h3>What is Wescove worth to your business?</h3>
+      <p class="k">Based on your own numbers, not ours.</p>
+
+      <div class="field">
+        <label>New clients you would close per month <b id="cVal">2</b></label>
+        <input type="range" id="clients" min="1" max="15" value="2" />
+      </div>
+      <div class="field">
+        <label>Average value of one new client (per year) <b id="vVal">$3,000</b></label>
+        <input type="range" id="value" min="500" max="10000" step="250" value="3000" />
+      </div>
+      <div class="field">
+        <label>Your plan</label>
+        <select id="plan">
+          <option value="199">Starter, $199/mo</option>
+          <option value="499" selected>Pro, $499/mo</option>
+        </select>
+      </div>
+
+      <div class="result">
+        <div class="big" id="annualValue">$72,000</div>
+        <div class="lbl">in new client value per year</div>
+        <div class="net">For a cost of <b id="annualCost">$5,988</b> a year. That is a <b id="roiX">12x</b> return, or <b id="netGain">$66,012</b> in your pocket.</div>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:28px;font-size:16px">A single $10,000 commercial policy pays an agent around <b>$1,500</b> in commission, and it renews every year. One client off this list covers your whole subscription, with thousands to spare.</p>
+  </div>
+</section>
+
+<!-- BREADTH: address "the market is huge / all industries" -->
+<section class="breadth">
+  <div class="wrap">
+    <h2>Every industry. Every county. Every business day.</h2>
+    <p class="lead">Florida is the second-fastest state for new business formation in the country. We cover all of it, so whatever you sell, your buyers are in here.</p>
+    <div class="stats">
+      <div class="stat"><div class="big">67</div><div class="lbl">Florida counties covered</div></div>
+      <div class="stat"><div class="big">15+</div><div class="lbl">industries auto-tagged</div></div>
+      <div class="stat"><div class="big">Daily</div><div class="lbl">fresh filings, every business day</div></div>
+      <div class="stat"><div class="big">100%</div><div class="lbl">public, lawful source data</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING: two tiers, no reseller -->
+<section id="pricing">
+  <div class="wrap">
+    <h2>Pick your coverage</h2>
+    <p class="lead">Start with a free week. Keep going only when the leads pay for themselves, and they will.</p>
+    <div class="price">
+      <div class="plan">
+        <h3>Starter</h3>
+        <p class="who">Solo agent, one focus area</p>
+        <div class="amt">$199<small>/mo</small></div>
+        <ul>
+          <li>One county or one industry</li>
+          <li>Daily filtered list</li>
+          <li>Owner, agent, address, entity details</li>
+          <li>Clean CSV, deduped, ready to call</li>
+          <li>Cancel anytime</li>
+        </ul>
+        <a class="btn ghost" href="#sample" style="text-align:center">Start with a free sample</a>
+      </div>
+      <div class="plan feature">
+        <div class="tagtop">MOST POPULAR</div>
+        <h3>Pro</h3>
+        <p class="who">Serious agents and growing agencies</p>
+        <div class="amt">$499<small>/mo</small></div>
+        <ul>
+          <li>Multiple counties and industries</li>
+          <li>The full statewide daily feed</li>
+          <li>Priority early-morning delivery</li>
+          <li>Owner, agent, address, entity details</li>
+          <li>Optional contact append (phone, email)</li>
+          <li>Cancel anytime</li>
+        </ul>
+        <a class="btn" href="#sample" style="text-align:center">Start with a free sample</a>
+      </div>
+    </div>
+    <p class="micro" style="text-align:center;margin-top:22px">Want to see the quality first? <a href="#sample" style="color:var(--accent-dark);font-weight:600">Get a free sample list for your county.</a></p>
+  </div>
+</section>
+
+<!-- SAMPLE CAPTURE -->
+<section id="sample" style="background:#fafcfb;border-top:1px solid var(--line)">
+  <div class="wrap" style="max-width:560px;text-align:center">
+    <h2>See it before you pay</h2>
+    <p class="lead">Tell us your market. We send a free sample of recent Florida filings that match, within one business day.</p>
+    <form name="sample-request" method="POST" action="/success.html" data-netlify="true" netlify-honeypot="bot-field" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
+      <input type="hidden" name="form-name" value="sample-request" />
+      <p style="display:none"><label>Skip: <input name="bot-field" /></label></p>
+      <input type="email" name="email" placeholder="Work email" required style="flex:1;min-width:220px;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:16px" />
+      <select name="vertical" required style="flex:1;min-width:200px;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:16px">
+        <option value="">Your industry</option>
+        <option>Insurance agency</option><option>CPA / accounting</option>
+        <option>Business banking</option><option>Marketing agency</option>
+        <option>Title / commercial real estate</option><option>Merchant services</option>
+        <option>Other</option>
+      </select>
+      <button class="btn" type="submit" style="padding:14px 24px">Send my free sample</button>
+    </form>
+    <p class="micro">We use your email only to send your sample and product updates. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <h2>Questions</h2>
+    <div class="faq">
+      <div class="qa"><h4>Where does the data come from?</h4><p>Public business registration records from the State of Florida. We collect, clean, filter, and deliver them so you do not have to.</p></div>
+      <div class="qa"><h4>Is it legal to use for outreach?</h4><p>Yes. These are public records. You follow the same contact rules as any prospecting list.</p></div>
+      <div class="qa"><h4>Do leads include phone and email?</h4><p>Every list includes owner name, registered agent, and mailing address. Pro can add verified phone and email as a contact append.</p></div>
+      <div class="qa"><h4>How fast will I see leads?</h4><p>Your first filtered list lands the next business morning after you sign up. New filings every business day after that.</p></div>
+      <div class="qa"><h4>How do I cancel?</h4><p>One click, anytime. No contract and no phone call.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER + GUARANTEE: the human + the risk reversal -->
+<section style="border-top:1px solid var(--line)">
+  <div class="wrap" style="max-width:760px">
+    <div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:center;text-align:left">
+      <img src="founder.jpg" alt="Wes, founder of Wescove, at the water's edge" style="width:160px;height:200px;object-fit:cover;border-radius:16px;flex-shrink:0;box-shadow:var(--shadow)" />
+      <div style="flex:1;min-width:260px">
+        <h3 style="margin:0 0 8px;font-size:20px">Why I built Wescove</h3>
+        <p style="margin:0;color:var(--muted);font-size:16px">I'm Wes, the founder. I kept watching local agents and accountants lose brand-new clients to whoever called first. The data to reach them is public, but it's buried in clunky state files. Wescove pulls it every morning, filters it to your county and industry, and puts it in your inbox before your competitors even know the business exists. Real person, real product — reply to any email and you'll get me, Wes.</p>
+      </div>
+    </div>
+    <div style="margin-top:30px;background:var(--soft);border-radius:14px;padding:22px 24px;text-align:center">
+      <div style="font-weight:800;color:var(--accent-dark);font-size:18px;margin-bottom:4px">Our promise to you</div>
+      <p style="margin:0;color:#27384c;font-size:15px">Try it free, no card. If your first lists aren't fresh, accurate, and worth far more than you pay, cancel in one click and owe nothing. One closed client covers your whole year.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>Your next client registered yesterday</h2>
+    <p class="lead">Reach them this morning, before your competition even knows they exist.</p>
+    <a class="btn" href="#sample" style="padding:16px 32px;font-size:17px">Get your free sample</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Wescove delivers public business registration data for lawful business development.<br/>
+    Not affiliated with any government agency. &copy; <span id="yr"></span> Wescove LLC.
+    <div style="margin-top:14px;font-size:14px">
+      <a href="/terms.html" style="color:var(--accent-dark);font-weight:600;margin:0 10px">Terms of Service</a>
+      <a href="/privacy.html" style="color:var(--accent-dark);font-weight:600;margin:0 10px">Privacy Policy</a>
+      <a href="/refund.html" style="color:var(--accent-dark);font-weight:600;margin:0 10px">Refund &amp; Cancellation</a>
+      <a href="mailto:wes@trywescove.com" style="color:var(--accent-dark);font-weight:600;margin:0 10px">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // ROI calculator (in-memory only, no storage)
+  var clients = document.getElementById('clients');
+  var value = document.getElementById('value');
+  var plan = document.getElementById('plan');
+  function money(n){ return '$' + Math.round(n).toLocaleString('en-US'); }
+  function update(){
+    var c = +clients.value, v = +value.value, p = +plan.value;
+    // clients closed per month * 12 months = clients/year, each worth v over a year
+    var annualValue = c * 12 * v;
+    var cost = p * 12;
+    document.getElementById('cVal').textContent = c;
+    document.getElementById('vVal').textContent = money(v);
+    document.getElementById('annualValue').textContent = money(annualValue);
+    document.getElementById('annualCost').textContent = money(cost);
+    document.getElementById('roiX').textContent = Math.round(annualValue / cost) + 'x';
+    document.getElementById('netGain').textContent = money(annualValue - cost);
+  }
+  [clients, value, plan].forEach(function(el){ el.addEventListener('input', update); });
+  update();
+</script>
+</body>
+</html>
+
