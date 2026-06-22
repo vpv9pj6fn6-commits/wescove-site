@@ -186,17 +186,17 @@
   </div>
   <!-- product preview so they see the actual deliverable -->
   <div class="mock" aria-hidden="true">
-    <div class="bar"><i></i><i></i><i></i><span class="ttl">your-leads-2026-06-16.csv</span><span style="margin-left:auto;background:var(--soft);color:var(--accent-dark);font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em">Filed yesterday</span></div>
+    <div class="bar"><i></i><i></i><i></i><span class="ttl">Wescove-Morning-Brief.pdf · Top 50</span><span style="margin-left:auto;background:var(--soft);color:var(--accent-dark);font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em">Filed yesterday</span></div>
     <table class="sheet">
-      <tr><th>Business</th><th>Type</th><th>City</th><th>Industry</th></tr>
-      <tr><td>Sunshine Roofing LLC</td><td>FL LLC</td><td>Miami</td><td class="badge"><span>Construction</span></td></tr>
-      <tr><td>Gulf Coast Dental PA</td><td>Corp</td><td>Naples</td><td class="badge"><span>Healthcare</span></td></tr>
-      <tr><td>Palm City Realty LLC</td><td>FL LLC</td><td>W. Palm Bch</td><td class="badge"><span>Real Estate</span></td></tr>
-      <tr><td>Bay Area HVAC LLC</td><td>FL LLC</td><td>Tampa</td><td class="badge"><span>Construction</span></td></tr>
-      <tr><td>Orlando Tech Labs LLC</td><td>FL LLC</td><td>Orlando</td><td class="badge"><span>Technology</span></td></tr>
-      <tr><td>Coral Tax Advisors LLC</td><td>FL LLC</td><td>Coral Gables</td><td class="badge"><span>Finance</span></td></tr>
+      <tr><th>Business</th><th>City</th><th>Industry</th><th>Direct contact</th><th>Score</th></tr>
+      <tr><td>Sunshine Roofing LLC</td><td>Miami</td><td class="badge"><span>Construction</span></td><td>(305) 555-0148</td><td style="font-weight:800;color:var(--accent-dark)">98</td></tr>
+      <tr><td>Gulf Coast Dental PA</td><td>Naples</td><td class="badge"><span>Healthcare</span></td><td>(239) 555-0102</td><td style="font-weight:800;color:var(--accent-dark)">96</td></tr>
+      <tr><td>Palm City Realty LLC</td><td>W. Palm Bch</td><td class="badge"><span>Real Estate</span></td><td>(561) 555-0177</td><td style="font-weight:800;color:var(--accent-dark)">95</td></tr>
+      <tr><td>Bay Area HVAC LLC</td><td>Tampa</td><td class="badge"><span>Construction</span></td><td>(813) 555-0190</td><td style="font-weight:800;color:var(--accent-dark)">93</td></tr>
+      <tr><td>Orlando Tech Labs LLC</td><td>Orlando</td><td class="badge"><span>Technology</span></td><td style="color:var(--muted)">on shortlist</td><td style="font-weight:800;color:var(--accent-dark)">90</td></tr>
+      <tr><td>Coral Tax Advisors LLC</td><td>Coral Gables</td><td class="badge"><span>Finance</span></td><td style="color:var(--muted)">on shortlist</td><td style="font-weight:800;color:var(--accent-dark)">88</td></tr>
     </table>
-    <div class="foot">+ owner name, registered agent, full address, and entity details on every row</div>
+    <div class="foot">Top 50 each morning, scored High→Low · up to 20 with direct phone &amp; email · owner, address &amp; likely insurance need on every row</div>
   </div>
 </div>
 </section>
@@ -224,10 +224,10 @@
         <p class="who">Solo agent, one focus area</p>
         <div class="amt">$49<small>/mo</small> <span style="font-size:14px;color:var(--muted);text-decoration:line-through;font-weight:600">$199</span></div>
         <ul>
-          <li>One county or one industry</li>
-          <li>Daily filtered list</li>
-          <li>Owner, agent, address, entity details</li>
-          <li>Clean CSV, deduped, ready to call</li>
+          <li>Your daily Top 50, scored High→Low</li>
+          <li>One county or one industry focus</li>
+          <li>Owner, city, entity type &amp; likely insurance need</li>
+          <li>Polished morning PDF brief</li>
           <li>Email support</li>
         </ul>
         <a class="btn ghost" href="https://buy.stripe.com/3cI6oHfsbelI2R137kejK00" style="text-align:center">Claim Founding Starter — $49/mo</a>
@@ -238,11 +238,11 @@
         <p class="who">Serious agents and growing agencies</p>
         <div class="amt">$99<small>/mo</small> <span style="font-size:14px;color:var(--muted);text-decoration:line-through;font-weight:600">$499</span></div>
         <ul>
-          <li>Multiple counties and industries</li>
-          <li>The full statewide daily feed</li>
+          <li>Your daily Top 50, scored High→Low</li>
+          <li><b>Up to 20 with direct phone &amp; email</b> each day</li>
+          <li>Statewide, or your chosen counties &amp; industries</li>
+          <li>Owner, city, entity type &amp; likely need on all 50</li>
           <li>Priority early-morning delivery</li>
-          <li>Owner, agent, address, entity details</li>
-          <li>Optional contact append (phone, email)</li>
         </ul>
         <a class="btn" href="https://buy.stripe.com/6oUbJ17ZJgtQdvFeQ2ejK03" style="text-align:center;background:var(--gold)">Claim Founding Pro — $99/mo</a>
       </div>
@@ -298,8 +298,8 @@
     <p class="lead">You do nothing but open the file and reach out. We handle the rest, every business day.</p>
     <div class="grid3">
       <div class="card"><div class="n">01</div><h3>We pull it daily</h3><p>Every new business registered in Florida that day, straight from the public record.</p></div>
-      <div class="card"><div class="n">02</div><h3>We filter it to you</h3><p>Only your industries and counties, deduped, cleaned, and formatted into one simple spreadsheet.</p></div>
-      <div class="card"><div class="n">03</div><h3>You close</h3><p>Owner, address, and entity details on every row. Reach out before anyone else does.</p></div>
+      <div class="card"><div class="n">02</div><h3>We score &amp; shortlist</h3><p>Filtered to your industries and counties, scored for insurance fit, down to your Top 50 for the day.</p></div>
+      <div class="card"><div class="n">03</div><h3>You close</h3><p>Owner, city, and likely insurance need on every lead — plus up to 20 with direct phone &amp; email. Reach out before anyone else does.</p></div>
     </div>
   </div>
 </section>
@@ -364,10 +364,10 @@
         <p class="who">Solo agent, one focus area</p>
         <div class="amt">$199<small>/mo</small></div>
         <ul>
-          <li>One county or one industry</li>
-          <li>Daily filtered list</li>
-          <li>Owner, agent, address, entity details</li>
-          <li>Clean CSV, deduped, ready to call</li>
+          <li>Your daily Top 50, scored High→Low</li>
+          <li>One county or one industry focus</li>
+          <li>Owner, city, entity type &amp; likely insurance need</li>
+          <li>Polished morning PDF brief</li>
           <li>Cancel anytime</li>
         </ul>
         <a class="btn ghost" href="#sample" style="text-align:center">Start with a free sample</a>
@@ -378,11 +378,11 @@
         <p class="who">Serious agents and growing agencies</p>
         <div class="amt">$499<small>/mo</small></div>
         <ul>
-          <li>Multiple counties and industries</li>
-          <li>The full statewide daily feed</li>
+          <li>Your daily Top 50, scored High→Low</li>
+          <li><b>Up to 20 with direct phone &amp; email</b> each day</li>
+          <li>Statewide, or your chosen counties &amp; industries</li>
+          <li>Owner, city, entity type &amp; likely need on all 50</li>
           <li>Priority early-morning delivery</li>
-          <li>Owner, agent, address, entity details</li>
-          <li>Optional contact append (phone, email)</li>
           <li>Cancel anytime</li>
         </ul>
         <a class="btn" href="#sample" style="text-align:center">Start with a free sample</a>
